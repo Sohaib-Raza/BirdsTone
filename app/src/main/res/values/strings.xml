@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Birds Sound &amp; Ringtones</string>
+
+    <string name="main_bottom_nav_home">Home</string>
+    <string name="main_bottom_nav_favorite">Favorite</string>
+    <string name="main_bottom_nav_setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--    tabs-->
+    <string name="ringtone">Ringtone</string>
+    <string name="alarm_tone">Alarm Tone</string>
+    <string name="sms_notification">SMS/Notification</string>
+    <string name="rate_star">Rate 5 stars</string>
+    <string name="share">Share</string>
+    <string name="privacy_terms">privacy policy</string>
+    <string name="more_apps">More apps</string>
+
+    <string name="submit">Submit</string>
+    <string name="thank_you_for_rate_us">Thank you for your value able feedback</string>
+    <string name="search">Search</string>
+    <string name="no_bird_in_favorite">No bird in favorite</string>
+    <string name="farms">Farms</string>
+    <string name="funny">Funny</string>
+    <string name="lound">Loud</string>
+    <string name="singing">Singing</string>
+    <string name="water">Water</string>
+    <string name="wild">Wild</string>
+    <string name="all_birds">All Birds</string>
+    <string name="please_rate_us">Please rate first</string>
+    <string name="image_here">Image here</string>
+    <string name="others">Others</string>
+    <string name="set_as_ringtone">Set as Ringtone</string>
+    <string name="set_as_ringtone_dec">"To set as Ringtone, needs permission from system settings. Try setting your ringtone again after grant permission. "</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="failed_to_set_the_ringtone">Failed to set the ringtone</string>
+    <string name="notification">Notification</string>
+    <string name="alarm">Alarm</string>
+    <string name="set_successfully">set Successfully</string>
+
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_required_dec">Allow Permission to Access  this App?</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="no_internet_conncetion">No internet connection</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="added_to_favorites">Added to favorites</string>
+
+</resources>

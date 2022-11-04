@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultsMap>
+
+
+    <entry><key>enable_app_open_ad</key><value>true</value></entry>
+    <entry><key>native_in_all_tab</key><value>true</value></entry>
+    <entry><key>all_tab_count</key><value>8</value></entry>
+    <entry><key>native_in_fav_tab</key><value>true</value></entry>
+    <entry><key>fav_tab_count</key><value>8</value></entry>
+    <entry><key>native_in_other_tab</key><value>true</value></entry>
+    <entry><key>other_tab_count</key><value>10</value></entry>
+    <entry><key>native_in_setting_fragment</key><value>true</value></entry>
+    <entry><key>native_in_search</key><value>true</value></entry>
+    <entry><key>fs_at_bottom_menu_click</key><value>true</value></entry>
+    <entry><key>fs_at_back_of_search</key><value>true</value></entry>
+    <entry><key>fs_at_set_ringtone</key><value>true</value></entry>
+    <entry><key>fs_at_back_of_set_ringtone</key><value>true</value></entry>
+    <entry><key>native_in_set_ring_tone</key><value>true</value></entry>
+
+
+</defaultsMap>

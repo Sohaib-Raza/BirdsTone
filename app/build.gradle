@@ -1,0 +1,147 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.dagger.hilt.android'
+    id 'org.jetbrains.kotlin.kapt'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+
+        applicationId "com.sound.birdstone"
+        namespace "com.sound.birdstone"
+
+//        applicationId "com.birdsondsringtones.birdscallsoundandringtone"
+
+
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+            resValue "string", "admob_app_id", "ca-app-pub-5034745694232174~4348085412"
+
+            resValue "string", "add_app_open", "ca-app-pub-5034745694232174/1401044794"
+
+
+            resValue "string", "interstitial_splash_ad", "ca-app-pub-5034745694232174/2268716986"
+            resValue "string", "interstitial_common", "ca-app-pub-5034745694232174/7329471976"
+            resValue "string", "interstitial_common_1", "ca-app-pub-5034745694232174/2077145298"
+
+
+            resValue "string", "native_ad_common", "ca-app-pub-5034745694232174/7137900286"
+            resValue "string", "native_ad_common_1", "ca-app-pub-5034745694232174/9572491938"
+
+
+            resValue "string", "banner_througout_app", ""
+
+
+        }
+
+        debug {
+
+            resValue "string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+
+            resValue "string", "add_app_open", "ca-app-pub-3940256099942544/3419835294"
+
+
+            resValue "string", "interstitial_splash_ad", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "interstitial_common", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "interstitial_common_1", "ca-app-pub-3940256099942544/1033173712"
+
+
+            resValue "string", "native_ad_common", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "native_ad_common_1", "ca-app-pub-3940256099942544/2247696110"
+
+
+            resValue "string", "banner_througout_app", "ca-app-pub-3940256099942544/6300978111"
+
+
+            minifyEnabled false
+
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+
+    def room_version = "2.4.3"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+    //for language change library
+    implementation 'com.akexorcist:localization:1.2.11'
+
+    implementation("androidx.multidex:multidex:2.0.1")
+    implementation 'io.github.gautamchibde:audiovisualizer:2.2.5'
+
+
+    def lifecycle_version = "2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    implementation platform('com.google.firebase:firebase-bom:30.5.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
+
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+    implementation 'com.google.ads.mediation:facebook:6.11.0.0'
+
+    // Hilt
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-android-compiler:2.44"
+
+    implementation 'androidx.fragment:fragment-ktx:1.5.4'
+
+    ext.lifecycle_version = "2.5.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+
+    implementation 'com.google.code.gson:gson:2.10'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
+
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+}

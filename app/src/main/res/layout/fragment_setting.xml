@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adsLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/SettingHeading"
+                android:text="@string/more_apps" />
+
+
+            <LinearLayout
+
+                android:id="@+id/liveWallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/icon_live_wallpaper" />
+
+                <TextView
+                    style="@style/SettingTextView"
+                    android:text="Live Wallpapers-HD Backgrounds (AD)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iphoneWallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_13sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_13sdp"
+                android:paddingBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/icon_iphone_wallpaper" />
+
+                <TextView
+                    style="@style/SettingTextView"
+                    android:text="iPhone Wallpapers - iPhone 14 (AD)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/natureSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_13sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_13sdp"
+                android:paddingBottom="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/icon_nature_sound" />
+
+                <TextView
+                    style="@style/SettingTextView"
+                    android:text="Nature Sounds - Better Sleep (AD)" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingHeading"
+                android:text="@string/others" />
+
+            <LinearLayout
+                android:id="@+id/rate_stars"
+                style="@style/SettingLayout">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/rateUsIcon"
+                    style="@style/SettingImage"
+                    app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/SettingTextView"
+                    android:text="@string/rate_star" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/share_layout"
+                style="@style/SettingLayout">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageVi"
+                    style="@style/SettingImage"
+                    app:srcCompat="@drawable/ic_baseline_share_24" />
+
+                <TextView
+                    android:id="@+id/textVi"
+                    style="@style/SettingTextView"
+                    android:text="@string/share" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/privacy"
+                style="@style/SettingLayout">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    style="@style/SettingImage"
+                    app:srcCompat="@drawable/ic_baseline_privacy_tip_24" />
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/SettingTextView"
+                    android:text="@string/privacy_terms" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/moreApp"
+                 style="@style/SettingLayout">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ima"
+                    style="@style/SettingImage"
+                    app:srcCompat="@drawable/ic_baseline_apps_24" />
+
+                <TextView
+                    android:id="@+id/te"
+                    style="@style/SettingTextView"
+                    android:text="@string/more_apps" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/adsLayout"
+        layout="@layout/adapter_ads_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

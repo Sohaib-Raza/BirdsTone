@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311632192575",
+    "project_id": "birdringtone",
+    "storage_bucket": "birdringtone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311632192575:android:eae2c3ef6771c6ed47848a",
+        "android_client_info": {
+          "package_name": "com.sound.birdstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311632192575-4e15tq3t60sm0fmv9h08aoj5di35f39v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZEG9TM84SBRRsVAm2RubNT7M0NXRNVF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311632192575-4e15tq3t60sm0fmv9h08aoj5di35f39v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
