@@ -5,12 +5,15 @@ import android.app.Application
 import android.content.Context
 import android.os.Bundle
 import com.akexorcist.localizationactivity.ui.LocalizationApplication
+import com.facebook.ads.AudienceNetworkActivity
 import com.sound.birdstone.helper.InternetController
 import com.sound.birdstone.helper.SaveValues
 import com.facebook.ads.AudienceNetworkAds
+import com.google.android.gms.ads.AdActivity
 import com.google.android.gms.ads.MobileAds
 import com.google.firebase.FirebaseApp
 import com.sound.birdstone.ads.openAd.AdsConstants
+import com.sound.birdstone.ads.openAd.AdsConstants.canShowOpenAd
 import com.sound.birdstone.ads.openAd.AppOpenManager
 import com.sound.birdstone.constants.Constants
 import dagger.hilt.android.HiltAndroidApp
@@ -87,10 +90,9 @@ class AppClass : LocalizationApplication(), Application.ActivityLifecycleCallbac
     }
 
     private fun handleCurrentActivity() {
-        /*     canShowOpenAd = (currentActivity !is SplashActivity
-                     && currentActivity !is PrivacyPolicyActivity
+             canShowOpenAd = (currentActivity !is SplashActivity
+                     && currentActivity !is PrivacyActivity
                      && currentActivity !is AdActivity && currentActivity !is AudienceNetworkActivity)
-     */
     }
 
     override fun onActivityResumed(activity: Activity) {

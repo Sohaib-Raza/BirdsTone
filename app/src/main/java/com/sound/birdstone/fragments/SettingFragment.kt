@@ -102,9 +102,9 @@ class SettingFragment : BaseNativeFragment() {
         }
 
         if (iphoneWallpaper && liveWallpaper && natureSound) {
-            binding.moreApp.visibility = View.GONE
+            binding.moreAppHeading.visibility = View.GONE
         } else {
-            binding.moreApp.visibility = View.VISIBLE
+            binding.moreAppHeading.visibility = View.VISIBLE
         }
 
     }

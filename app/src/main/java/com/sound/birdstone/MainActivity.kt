@@ -61,6 +61,8 @@ class MainActivity : BaseNativeActivity() {
             when (it.itemId) {
                 R.id.home -> {
 
+
+
                     interstitialController.showInterstitial(activity,
                         AdsConstants.FS_AT_BOTTOM_MENU_CLICK, object :
                             InterstitialControllerListener {

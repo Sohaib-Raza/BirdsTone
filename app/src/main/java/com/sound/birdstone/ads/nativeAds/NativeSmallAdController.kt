@@ -11,13 +11,13 @@ import com.sound.birdstone.ads.openAd.AdsConstants.populateUnifiedNativeAdViewFo
 import com.sound.birdstone.constants.Constants.Companion.showToast
 import com.sound.birdstone.helper.InternetController
 import com.sound.birdstone.helper.SaveValues
-import com.google.ads.mediation.facebook.BuildConfig
 import com.google.ads.mediation.facebook.FacebookAdapter
 import com.google.ads.mediation.facebook.FacebookExtras
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import com.google.android.gms.ads.nativead.NativeAdView
+import com.sound.birdstone.BuildConfig
 import com.sound.birdstone.ads.AdControllerListener
 import javax.inject.Inject
 import javax.inject.Singleton

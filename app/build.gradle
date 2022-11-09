@@ -123,6 +123,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging-ktx'
     implementation 'com.google.firebase:firebase-config-ktx'
 
+    //ads
+
     implementation 'com.google.android.gms:play-services-ads:21.3.0'
     implementation 'com.google.ads.mediation:facebook:6.11.0.0'
 
